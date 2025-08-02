@@ -8,7 +8,7 @@ import trabajoRoutes from "./rutas/trabajoRoutes.js";
 dotenv.config(); // Carga las variables de .env
 
 const app = express();
-const PORT = 4001;
+const PORT = process.env.PORT;
 
 // 🔹 Habilitar JSON
 app.use(express.json());
